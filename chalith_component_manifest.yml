@@ -1,0 +1,15 @@
+# The component manifest file for the Simple test component
+
+Name: ChalithComponent
+Type: platform
+Description: "Simple test component for the Decoupled Simulation Platform by chalith"
+DockerImage: chalith_component
+Attributes:
+    ChalithValue:
+        Environment: CHALITH_VALUE
+        Optional: false
+    InputComponents:
+        Environment: INPUT_COMPONENTS
+        Optional: true
+        Default: ""
+
